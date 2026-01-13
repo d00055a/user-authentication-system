@@ -35,7 +35,7 @@ The application demonstrates real-world authentication flows, including secure p
   
 ## Tech Stack
 
-- **Frontend**
+ **Frontend**
 
 - **React 19** – UI library
 
