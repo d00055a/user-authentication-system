@@ -93,15 +93,17 @@ npm install
   ```
 
 
-## Deploy to GitHub Pages
+## Deployment
 
-- Update **.env** with the production backend URL:
+To deploy to GitHub Pages:
+
+1. Update **.env** with the production backend URL:
    
    ```Env
    VITE_API_URL=https://user-authentication-backend-3dvc.onrender.com
    ```
 
-- Build and deploy:
+2. Build and deploy:
 
    ```bash
    npm run deploy
