@@ -1,82 +1,71 @@
-# User Authentication System
+# User Authentication System (Frontend)
 
 
-A full-stack **User Authentication System** built with **React (Vite)** on the frontend and **Node.js + Express** on the backend, implementing secure authentication, authorization and protected routes using **JWT**.
+## Overview
 
-The application demonstrates real-world authentication flows, including secure password hashing, session management and role-based access to protected endpoints.
+This project is a full-stack User Authentication System developed independently as part of a remote Web Development Internship at Codveda Technologies.
+
+The frontend is built with React and demonstrates real-world authentication flows, including user registration, login, logout and access to protected routes. The application communicates with a REST API backend and handles authentication using JWT stored in httpOnly cookies.
+
+## Project Scope
+
+This project was designed and implemented entirely by me, from frontend user interfaces to backend API integration and deployment.
 
 ## Features
 
-- User registration with secure password hashing (bcrypt)
-
+- User registration with form validation
 - User login with JWT-based authentication
-
-- Session handling via httpOnly cookies
-
+- Secure session handling via httpOnly cookies
 - Logout functionality
+- Protected frontend routes accessible only to authenticated users
+- Authenticated user data retrieval
+- Integration with a REST API backend
 
-- Protected routes accessible only to authenticated users
+## Frontend Implementation
 
-- Authenticated user data retrieval (/me)
+- React-based authentication forms
+- Client-side state management for authentication status
+- Protected routes based on user authentication
+- API communication using the Fetch API
+- Responsive UI built with custom CSS
 
-- Secure API endpoint protection (/secret)
 
 ## Architecture
 
-- **Frontend**: React + Vite (GitHub Pages)
-
-- **Backend**: Node.js + Express (hosted on Render)
-
-- **Communication**: REST API via Fetch API
-
-- **Authentication**: JWT stored in httpOnly cookies
-
-- **Database**: MongoDB (via backend)
+- Frontend: React + Vite
+- Backend: Node.js + Express (separate repository)
+- Authentication: JWT stored in httpOnly cookies
+- Communication: REST API
+- Database: MongoDB (handled by backend)
   
 ## Tech Stack
 
- **Frontend**
+### Frontend
 
-- **React 19** – UI library
+- React
+- Vite
+- JavaScript (ES Modules)
+- CSS (custom styling and responsiveness)
+- gh-pages (deployment)
 
-- **Vite** – Development server & build tool
 
-- **JavaScript (ESM)** – Application logic
-
-- **CSS** – Custom styling, responsiveness & animations
-
-- **gh-pages** – Deployment to GitHub Pages
-
-**Backend**
-
-- **Node.js & Express** – REST API
-
-- **MongoDB** – User data storage
-
-- **bcrypt** – Password hashing
-
-- **JWT** – Authentication & authorization
-
-## Live demo
-
-- **Frontend** :
+## Live Demo
+Frontend:  
 https://d00055a.github.io/user-authentication-system
 
-- **Backend API**:
+Backend API:  
 https://user-authentication-backend-3dvc.onrender.com
 
-- **Note**: The backend is hosted on Render (free tier), so the first request may take up to **1 minute** to wake up.
+
+> Note: The backend is hosted on Render (free tier), so the first request may take up to one minute to respond.
 
 
-## Run Locally
+### Frontend Setup
 
-**Frontend**
-   
-   ```bash
-   git clone https://github.com/d00055a/user-authentication-system.git
-   cd user-authentication-system   
-   npm install
-   ```
+```bash
+git clone https://github.com/d00055a/user-authentication-system.git
+cd user-authentication-system
+npm install
  
 **Install dependencies**
 
@@ -84,7 +73,7 @@ https://user-authentication-backend-3dvc.onrender.com
    npm install
    ```
 
-- Create a **.env** file in the frontend root:
+- Create a **.env** file in the root directory:
 
    ```Env
    VITE_API_URL=http://localhost:4000
@@ -95,10 +84,10 @@ https://user-authentication-backend-3dvc.onrender.com
    npm run dev
    ```
    
-- Open:
+- Open in browser:
   
   ```arduino
-  http://localhost:5173 in your browser.
+  http://localhost:5173
   ```
 
 
@@ -119,16 +108,15 @@ https://user-authentication-backend-3dvc.onrender.com
 
 ## Purpose
 
-This project was built to practice and demonstrate:
+This project was built to demonstrate:
 
-- Secure authentication & authorization
+- Frontend authentication flows in React
 
-- JWT-based session management
+- Secure handling of user sessions
 
-- Full-stack frontend ↔ backend communication
+- Integration between frontend and backend services
 
 - Real-world deployment and environment configuration
-
 
 
    
