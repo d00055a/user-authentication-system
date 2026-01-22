@@ -59,6 +59,7 @@ https://user-authentication-backend-3dvc.onrender.com
 
 > Note: The backend is hosted on Render (free tier), so the first request may take up to one minute to respond.
 
+## Run locally
 
 ### Frontend Setup
 
